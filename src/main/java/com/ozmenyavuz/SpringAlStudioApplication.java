@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan("com.ozmenyavuz")
 @EntityScan(basePackages = "com.ozmenyavuz")
 @SpringBootApplication
-public class SpringAiStudioApplication {
+public class SpringAlStudioApplication {
 
 	public static void main(String[] args) {
 		// ✅ .env dosyasını yükle
@@ -18,6 +18,6 @@ public class SpringAiStudioApplication {
 		// ✅ JVM ortam değişkeni olarak ata
 		dotenv.entries().forEach(entry -> System.setProperty(entry.getKey(), entry.getValue()));
 
-		SpringApplication.run(SpringAiStudioApplication.class, args);
+		SpringApplication.run(SpringAlStudioApplication.class, args);
 	}
 }

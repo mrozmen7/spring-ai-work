@@ -12,11 +12,11 @@ import org.springframework.context.annotation.ComponentScan;
 public class SpringAlStudioApplication {
 
 	public static void main(String[] args) {
-		// ✅ .env dosyasını yükle
-		Dotenv dotenv = Dotenv.load();
-
-		// ✅ JVM ortam değişkeni olarak ata
-		dotenv.entries().forEach(entry -> System.setProperty(entry.getKey(), entry.getValue()));
+//		// ✅ .env dosyasını yükle
+//		Dotenv dotenv = Dotenv.load();
+//
+//		// ✅ JVM ortam değişkeni olarak ata
+//		dotenv.entries().forEach(entry -> System.setProperty(entry.getKey(), entry.getValue()));
 
 		SpringApplication.run(SpringAlStudioApplication.class, args);
 	}

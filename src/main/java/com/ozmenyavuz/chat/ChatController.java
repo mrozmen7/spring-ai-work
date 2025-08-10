@@ -37,10 +37,10 @@ ChatController {
             return Flux.error(new RuntimeException("Streaming failed: " + e.getMessage()));
         }
     }
-    @GetMapping("/dogs")
-    public ChatResponse joke() {
+    @GetMapping("/bankUbs")
+    public ChatResponse banking() {
         return chatClient.prompt()
-                .user("Tell me a dad joke about dogs")
+                .user("Give me brief information about UBS Bank")
                 .call()
                 .chatResponse();
     }

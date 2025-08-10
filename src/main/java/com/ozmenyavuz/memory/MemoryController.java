@@ -1,5 +1,4 @@
-package com.ozmenyavuz;
-
+package com.ozmenyavuz.memory;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
 import org.springframework.ai.chat.memory.ChatMemory;
